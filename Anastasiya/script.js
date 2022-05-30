@@ -1,4 +1,4 @@
-let have_key = false;
+let right_code = "1000";
 
 AFRAME.registerComponent("door", {
   schema: {
@@ -7,9 +7,11 @@ AFRAME.registerComponent("door", {
   init() {
     const sky = document.querySelector("a-sky");
     this.el.addEventListener("click", () => {
-      if (have_key) {
+      if (localStorage.getItem("have_key")) {
         alert("You escaped");
       } else {
+        // door_text = document.getElementById("doortext");
+        // door_text.visible = true;
         alert("door is locked");
       }
     });
@@ -22,17 +24,8 @@ AFRAME.registerComponent("washing_machine", {
   },
   init() {
     const sky = document.querySelector("a-sky");
-    var b = false;
     this.el.addEventListener("click", () => {
-      have_key = true;
-      alert(have_key);
-      // if (b) {
-      //   sky.setAttribute("src", "#entrance");
-      // } else {
-      //   sky.setAttribute("src", "#study");
-      // }
-      // b = !b;
-      // console.log("clicked");
+      window.location.href = "InsideWashingMachine.html";
     });
   },
 });
@@ -44,14 +37,43 @@ AFRAME.registerComponent("bin", {
   init() {
     let insideBin = false;
     this.el.addEventListener("click", () => {
-      alert();
-      // if (b) {
-      //   sky.setAttribute("src", "#entrance");
-      // } else {
-      //   sky.setAttribute("src", "#study");
-      // }
-      // b = !b;
-      // console.log("clicked");
+      alert("The password");
     });
   },
 });
+
+// if (b) {
+//   sky.setAttribute("src", "#entrance");
+// } else {
+//   sky.setAttribute("src", "#study");
+// }
+// b = !b;
+// console.log("clicked");
+
+// function story() {
+//   alert(
+//     "Oh..no! You started the washing machine and the key from the laundry is inside..."
+//   );
+//   alert(
+//     "You have to stop the machine... But they are locked with special password, try to remember where is the paper with the password"
+//   );
+// }
+
+/////////////// buttons with code
+function button_click(btn) {
+  btn.innerHTML = (parseInt(btn.innerHTML) + 1) % 10;
+}
+
+function check_code() {
+  let code = "";
+  for (let i = 0; i < 4; i++) {
+    code += document.getElementById("button_" + i.toString()).innerHTML;
+  }
+  if (code == right_code) {
+    alert("Right code! You found a key inside!");
+    localStorage.setItem("have_key", "true");
+  } else {
+    alert("Wrong code!");
+  }
+  window.location.href = "Index.html";
+}

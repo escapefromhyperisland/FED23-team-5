@@ -4,9 +4,10 @@
     <script src="script.js"></script>
   </head>
 
-  <body>
+  <body onload="story()">
     <a-scene cursor="rayOrigin:mouse">
       <a-sky src="/assets/loundry.jpg"></a-sky>
+      <!-- THE DOOR -->
       <a-box
         width="4"
         height="3.4"
@@ -18,7 +19,16 @@
         door
         material="opacity: 0.0; transparent: true"
       ></a-box>
-
+      <a-entity
+        geometry="primitive: plane; width: 40; height: auto"
+        material="opacity: 0.0; transparent: true"
+        text="value: The door is locked"
+        position="-14 4.85 15.84"
+        rotation="0 180 0"
+        visible="false"
+        doortext
+      ></a-entity>
+      <!-- THE WASHING MASHINE -->
       <a-sphere
         radius="5"
         material="color: red"
@@ -31,7 +41,18 @@
         src=""
         washing_machine
       ></a-sphere>
-
+      <!-- THE BIN -->
+      <a-box
+        width="3"
+        height="2"
+        depth="0.5"
+        position="15.5 -3 20"
+        rotation="0 0 0"
+        scale="1 2.5 1"
+        src=""
+        bin
+        material="opacity: 0.0; transparent: true"
+      ></a-box>
       <a-assets>
         <!-- <audio id="river" src="assets/Bg-music.wav" autoplay="true" loop="true"></audio> -->
         <!-- <img id="entrance" src="https://i.imgur.com/wjobVTN.jpg" />
