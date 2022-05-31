@@ -1,15 +1,50 @@
 <html>
   <head>
-    <title>Increment Decrement Counter</title>
-    <link rel="stylesheet" href="global_styles.css" />
+    <title>Washing Machine</title>
+    <link rel="stylesheet" href="globalStyles.css" />
     <script src="script.js"></script>
   </head>
 
   <body>
-    <button type="button" onClick="button_click(this)" id="button_0">0</button>
-    <button type="button" onClick="button_click(this)" id="button_1">0</button>
-    <button type="button" onClick="button_click(this)" id="button_2">0</button>
-    <button type="button" onClick="button_click(this)" id="button_3">0</button>
-    <button type="button" onClick="check_code()" id="check">Try to open</button>
+    <div id="insideWM-wraper">
+      <h1>The washing machine is locked</h1>
+      <div class="btn-wraper">
+        <button
+          type="button"
+          onClick="button_click(this)"
+          id="button_0"
+          class="passwordBth"
+        >
+          0
+        </button>
+        <button
+          type="button"
+          onClick="button_click(this)"
+          id="button_1"
+          class="passwordBth"
+        >
+          0
+        </button>
+        <button
+          type="button"
+          onClick="button_click(this)"
+          id="button_2"
+          class="passwordBth"
+        >
+          0
+        </button>
+        <button
+          type="button"
+          onClick="button_click(this)"
+          id="button_3"
+          class="passwordBth"
+        >
+          0
+        </button>
+      </div>
+      <button type="button" onClick="check_code()" id="check">
+        Try to open
+      </button>
+    </div>
   </body>
 </html>
