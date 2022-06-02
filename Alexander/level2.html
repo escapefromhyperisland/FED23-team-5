@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://codechangers.com/physics.js"></script>
+</head>
+
+<body>
+    <a-scene id="myScene">
+        <a-entity environment="preset:volcano;"></a-entity>
+        <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="black"
+            rotation="-90 0 0"></a-plane>
+        <a-camera id="myCamera" position="0 1 0">
+            <a-cursor intersection-spawn="event: click; mixin: voxel"></a-cursor>
+        </a-camera>
+        <a-icosahedron static-body class="target" color="white" radius="1" position="-2 3 -5"></a-icosahedron>
+        <a-icosahedron static-body class="target" color="white" radius="1" position="2 3 -5"></a-icosahedron>
+        <a-icosahedron static-body class="target" color="white" radius="1" position="-2 3 -10"></a-icosahedron>
+        <a-icosahedron static-body class="target" color="white" radius="1" position="2 3 -10"></a-icosahedron>
+    </a-scene>
+</body>
+<script src="https://codechangers.com/camps2019/vr/shoot-partial.js"></script>
+<script src="script.js"></script>
+<script>nextLevel = 'level3.html';</script>
+
+</html>
+
+<!-- <html>
+
+<head>
+    <script src="https://unpkg.com/aframe@1.0.4/dist/aframe-master.js"></script>
+    <script src="https://unpkg.com/aframe-super-shooter-kit@latest"></script>
+    <script>
+        AFRAME.registerComponent("click-to-shoot", {
+            init: function () {
+                document.body.addEventListener("click", () => {
+                    console.log("Pew pew pew!");
+                    this.el.emit("shoot");
+                });
+            }
+        });
+        AFRAME.registerComponent("hit-handler", {
+            init: function () {
+                var el = this.el;
+                var opacity = 1;
+                var scale = 1;
+
+                el.setAttribute("material", "transparent", true);
+
+                el.addEventListener("hit", () => {
+                    console.log("You hit the target, it slowly evaporates!");
+                    opacity -= 0.1;
+                    scale *= 1.2;
+                    el.setAttribute("material", "opacity", opacity);
+                    console.log(scale)
+                    el.setAttribute("scale", `1 ${scale} 1`);
+                });
+
+                el.addEventListener("die", () => {
+                    console.log("This object is dead, and will be removed!")
+                    el.parentNode.removeChild(el);
+                    el.setAttribute("target", "active", false)
+                });
+            }
+        });
+    </script>
+</head>
+
+<body>
+    <a-scene collide>
+        <a-entity id="bulletTemplate" bullet geometry="primitive: sphere; radius: 0.1" material="color: red"></a-entity>
+
+        <a-entity position="1 0 -2" target="healthPoints: 10" geometry="primitive: box" material="color: red"
+            hit-handler>
+        </a-entity>
+        <a-entity position="0 0 -2" target="healthPoints: 10" geometry="primitive: box" material="color: green"
+            hit-handler>
+        </a-entity>
+        <a-entity position="-1 0 -2" target="healthPoints: 10" geometry="primitive: box" material="color: blue"
+            hit-handler>
+        </a-entity>
+
+        <a-entity camera look-controls wasd-controls shooter click-to-shoot>
+        </a-entity>
+    </a-scene>
+</body>
+
+</html> -->
