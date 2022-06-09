@@ -9,7 +9,7 @@ AFRAME.registerComponent("door", {
         localStorage.setItem("have_key", "");
         alert("You escaped");
         localStorage.setItem("dontShowStory", "");
-        window.location.href = "ShufflePuzzle.html";
+        // window.location.href = "ShufflePuzzle.html";
       } else {
         // door_text = document.getElementById("doortext");
         // door_text.visible = true;
