@@ -3,11 +3,12 @@ AFRAME.registerComponent("door", {
     default: "",
   },
   init() {
-    const sky = document.querySelector("a-sky");
+    // const sky = document.querySelector("a-sky");
     this.el.addEventListener("click", () => {
       if (localStorage.getItem("have_key")) {
         localStorage.setItem("have_key", "");
         alert("You escaped");
+        localStorage.setItem("dontShowStory", "");
         window.location.href = "ShufflePuzzle.html";
       } else {
         // door_text = document.getElementById("doortext");
@@ -49,12 +50,14 @@ AFRAME.registerComponent("bin", {
 // }
 // b = !b;
 // console.log("clicked");
-
-// function story() {
-//   alert(
-//     "Oh..no! You started the washing machine and the key from the laundry is inside..."
-//   );
-//   alert(
-//     "You have to stop the machine... But they are locked with special password, try to remember where is the paper with the password"
-//   );
-// }
+function story() {
+  if (!localStorage.getItem("dontShowStory")) {
+    alert(
+      "Oh..no! You started the washing machine and the key from the laundry is inside..."
+    );
+    alert(
+      "You have to stop the machine... But they are locked with special password, try to remember where is the paper with the password"
+    );
+    localStorage.setItem("dontShowStory", "1");
+  }
+}

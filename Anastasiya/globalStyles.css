@@ -21,3 +21,24 @@
   width: 200px;
   font-size: 25px;
 }
+.hintImg {
+  height: 150px;
+  width: 150px;
+}
+.hintGoBackBtn {
+  height: 50px;
+  width: 150px;
+}
+
+#hint-wraper {
+  margin-top: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* background-color: green; */
+  align-items: center;
+}
+
+.hint-img {
+  margin: 10% 0;
+}

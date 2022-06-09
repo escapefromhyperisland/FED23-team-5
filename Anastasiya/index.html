@@ -6,7 +6,8 @@
 
   <body onload="story()">
     <a-scene cursor="rayOrigin:mouse">
-      <a-sky src="/assets/loundry.jpg"></a-sky>
+      <a-camera wasd-controls-enabled="false"></a-camera>
+      <a-sky src="assets/loundry.jpg"></a-sky>
       <!-- THE DOOR -->
       <a-box
         width="4"
@@ -37,7 +38,7 @@
         position="-42 -9 -11.5"
         rotation="0 0 0"
         scale="0.2"
-        src="/assets/washing machine texture1.jpg"
+        src="assets/washingMachineTexture1.jpg"
         washing_machine
       ></a-sphere>
       <!-- THE BIN -->
@@ -54,7 +55,7 @@
       ></a-box>
       <a-assets>
         <!-- <audio id="river" src="assets/Bg-music.wav" autoplay="true" loop="true"></audio> -->
-        <img id="washingClothes" src="/assets/washing machine texture1.jpg" />
+        <img id="washingClothes" src="assets/washingMachineTexture1.jpg" />
         <!-- <img id="study" src="https://i.imgur.com/I7PAB.jpg" /> -->
         <!-- <img id="parking" src="https://i.imgur.com/HNluPrg.jpg" />  -->
       </a-assets>
