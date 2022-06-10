@@ -16,9 +16,9 @@ function check_code() {
   } else {
     alert("Wrong code!");
   }
-  window.location.href = "Index.html";
+  window.location.href = "index.html";
 }
 
 function go_back() {
-  window.location.href = "Index.html";
+  window.location.href = "index.html";
 }
