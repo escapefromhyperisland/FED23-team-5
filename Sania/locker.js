@@ -3,7 +3,7 @@ AFRAME.registerComponent("locker", {
       var el = this.el;
       el.addEventListener('click', function (evt) {
       console.log("i am locker")
-      if (localStorage.getItem("have_key","true")) {
+      if (sessionStorage.getItem("have_key","true")) {
        alert("locker is open");
        
       } 
