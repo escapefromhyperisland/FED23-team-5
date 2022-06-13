@@ -5,7 +5,7 @@ AFRAME.registerComponent('exit-handler', {
       el.addEventListener('click', function (evt) {
         console.log("lets escape")
         alert("you can escaped")
-        location.href="https://www.youtube.com/"
+        location.href="https://www.github.com/"
       
       })
     }
