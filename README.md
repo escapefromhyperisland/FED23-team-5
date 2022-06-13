@@ -2,15 +2,16 @@
 Game Repositories:
 <a href="https://escapefromhyperisland.github.io/FED23-team-5/Anastasiya/index.html">Anastasiya</a>
 <a href="https://escapefromhyperisland.github.io/FED23-team-5/Sania/index.html">Sania</a>
+<a href="https://escapefromhyperisland.github.io/FED23-team-5/Isac/index.html">Isac</a>
+
 Alexander
-Isac
 Jinto
 <br />
 <br />
 
 !! Play Game here:*-----*
 <br />
-https://escapefromhyperisland.github.io/?world=5
+<a href= "https://escapefromhyperisland.github.io/?world=5"> Game World </a>
 <br />
 Preview of levels
 <br />
