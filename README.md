@@ -19,7 +19,6 @@ Preview of levels
 Level 1 "Escape from a loundry room"
 <br />
 ![image](https://user-images.githubusercontent.com/89774078/173438257-344622b6-ee14-47df-a102-2a28acdcf4ed.png)
-<a href= "https://escapefromhyperisland.github.io/FED23-team-5/Anastasiya/index.html">
 <br />
 Level 2 "Golden House"
 <br />
