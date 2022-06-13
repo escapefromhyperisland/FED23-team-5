@@ -8,6 +8,7 @@ Jinto
 <br />
 <br />
 
-Play Game Here
-** Enjoy the chaos!! Play here:*-----*
+!! Play Game here:*-----*
+<br />
+
 https://escapefromhyperisland.github.io/?world=5
