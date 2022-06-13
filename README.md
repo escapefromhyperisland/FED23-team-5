@@ -16,6 +16,8 @@ Preview of levels
 <br />
 Level 1
 <br />
-Level 2
+Level 2 Golden House
+![Golden House](https://user-images.githubusercontent.com/90827790/173333283-8c3d4a9e-e179-4fe9-944d-09be58ab4863.png")
+
 <br />
 Level 3
