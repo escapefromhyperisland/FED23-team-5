@@ -5,3 +5,6 @@ Game Repositories:
 Alexander
 Isac
 Jinto
+Play Game Here
+** Enjoy the chaos!! Play here:*-----*
+https://escapefromhyperisland.github.io/?world=5
