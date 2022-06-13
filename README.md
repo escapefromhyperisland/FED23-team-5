@@ -10,5 +10,12 @@ Jinto
 
 !! Play Game here:*-----*
 <br />
-
 https://escapefromhyperisland.github.io/?world=5
+<br />
+Preview of levels
+<br />
+Level 1
+<br />
+Level 2
+<br />
+Level 3
