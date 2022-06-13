@@ -17,8 +17,8 @@ AFRAME.registerComponent("key-handler", {
                 htmlKey.classList.add("displayNone");
                 key.setAttribute('visible','false'); 
           scoreCount+=10;
-                localStorage.setItem("scoreCount", scoreCount);
-                localStorage.setItem("have_key", "true");
+                sessionStorage.setItem("scoreCount", scoreCount);
+                sessionStorage.setItem("have_key", "true");
       })
     }
   });
