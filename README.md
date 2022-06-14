@@ -5,11 +5,6 @@ Game Links:
 <a href="https://escapefromhyperisland.github.io/FED23-team-5/Isac/index.html">Isac</a>
 <a href="https://escapefromhyperisland.github.io/FED23-team-5/JintDas/GameStart.html">Jinto</a>
 
-Alexander
-Jinto
-<br />
-<br />
-
 !! Play Game here:*-----*
 <br />
 <a href= "https://escapefromhyperisland.github.io/?world=5"> Game World </a>
