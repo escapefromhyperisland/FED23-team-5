@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+    <script src="https://codechangers.com/physics.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <button onclik.href="GameLevel1.html"> <span>Game Start</span></button>
+        <p class="ptag">Find the hidden boxes and shoot! You can earn $100 after finishing the game!</p>
+    </div>
+    <a-scene id="myScene">
+        <a-entity environment="preset:arches;"></a-entity>  
+        <a-text color="white" value=" Hints: Press space button to shoot the all boxes to go to next level!" position="-3 1 -4"></a-text>
+        <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="white"
+            rotation="-90 0 0"></a-plane>
+       
+            <a-camera id="myCamera" position="0 1 0">
+            <a-cursor intersection-spawn="event: click; mixin: voxel"></a-cursor>
+        </a-camera>
+
+        <a-box static-body class="target" color="white" radius="1" position="-15 4 -5"></a-box>
+        <a-box static-body class="target" color="red" radius="1" position="-5 2 -2"></a-box>
+        <a-box static-body class="target" color="orange" radius="2" position="1 2 -7"></a-box>
+        <a-box static-body class="target" color="blue" radius="1" position="-10 1 10"></a-box>
+        </a-scene>
+</body>
+<script src="https://codechangers.com/camps2019/vr/shoot-partial.js"></script>
+<script src="script.js"></script>
+<script>nextLevel = 'GameLevel2.html';</script>
+
+</html>

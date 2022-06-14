@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aframe/0.7.1/aframe.min.js"></script>
+    <script
+        src="https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js"></script>
+     <script src="https://codechangers.com/physics.js"></script>
+     <link rel="stylesheet" href="style.css">
+    <title>End </title>
+</head>
+<body>
+  
+  <a-assets>
+
+    <a-asset-item id="treasure-o" src="assets/OBJ/treasure.obj"></a-asset-item>
+    <a-asset-item id="treasure-m" src="assets/OBJ/treasure.mtl"></a-asset-item>
+    <a-asset-item id="treasue-bak" src="assets/OBJ/treasure.mtl.bak"></a-asset-item>    
+</a-assets>
+ 
+  
+    <a-scene id="myScene">
+        <a-entity environment="preset:dream;"></a-entity>  
+        <a-text color="white" value="Game end. Congratulation! You won $100" position="-1 .8 -3"></a-text>
+        <a-plane id="floor" static-body height="1000" width="1000" position="0 -0.02 0" color="black" rotation="-90 0 0"></a-plane>
+    </a-scene>
+</body>
+<script src="https://codechangers.com/camps2019/vr/shoot-partial.js"></script> 
+<script src="script.js"></script>
+<script>nextLevel = 'GameStart.html';</script>
+</html>

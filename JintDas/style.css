@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    background-color: rgb(149, 30, 0);
+    color:white;
+    align-items: center;
+}
+
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    
+  }
+  .ptag{
+      position: center;
+  }
