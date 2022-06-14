@@ -1,8 +1,9 @@
 # FED23-team-5
-Game Repositories:
+Game Links:
 <a href="https://escapefromhyperisland.github.io/FED23-team-5/Anastasiya/index.html">Anastasiya</a>
 <a href="https://escapefromhyperisland.github.io/FED23-team-5/Sania/index.html">Sania</a>
 <a href="https://escapefromhyperisland.github.io/FED23-team-5/Isac/index.html">Isac</a>
+<a href="https://escapefromhyperisland.github.io/FED23-team-5/JintDas/GameStart.html">Jinto</a>
 
 Alexander
 Jinto
@@ -36,8 +37,7 @@ Level 4 "Dino Kombat"
 <br />
 <img width="1020" alt="Skärmavbild 2022-06-13 kl  12 08 15 (1)" src="https://user-images.githubusercontent.com/90827790/173334036-0a441f1d-01c5-4fe8-9550-46c1a2fbb2dd.png">
 
-<br />
-<br />
+
 
 
 
